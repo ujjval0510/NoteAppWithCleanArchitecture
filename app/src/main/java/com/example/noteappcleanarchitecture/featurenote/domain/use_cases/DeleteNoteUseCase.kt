@@ -6,7 +6,7 @@ import com.example.noteappcleanarchitecture.featurenote.domain.repository.NoteRe
 class DeleteNoteUseCase(
     private val repository: NoteRepository
 ) {
-    suspend fun invoke(note: Note) {
+    suspend operator fun invoke(note: Note) {
         return repository.deleteNote(note)
     }
 }

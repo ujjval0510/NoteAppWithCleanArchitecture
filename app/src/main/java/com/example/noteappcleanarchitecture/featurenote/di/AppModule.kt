@@ -6,6 +6,7 @@ import com.example.noteappcleanarchitecture.featurenote.data.data_source.NoteDat
 import com.example.noteappcleanarchitecture.featurenote.data.data_source.NoteDatabase.Companion.DATABASE_NAME
 import com.example.noteappcleanarchitecture.featurenote.data.repository.NoteRepositoryImpl
 import com.example.noteappcleanarchitecture.featurenote.domain.repository.NoteRepository
+import com.example.noteappcleanarchitecture.featurenote.domain.use_cases.AddNoteUseCase
 import com.example.noteappcleanarchitecture.featurenote.domain.use_cases.DeleteNoteUseCase
 import com.example.noteappcleanarchitecture.featurenote.domain.use_cases.GetNotesUseCase
 import com.example.noteappcleanarchitecture.featurenote.domain.use_cases.NoteUseCases
@@ -40,7 +41,8 @@ object AppModule {
     fun provideNoteUseCases(repository: NoteRepository): NoteUseCases {
         return NoteUseCases(
             getNotesUseCase = GetNotesUseCase(repository),
-            deleteNoteUseCase = DeleteNoteUseCase(repository)
+            deleteNoteUseCase = DeleteNoteUseCase(repository),
+            addNoteUseCases = AddNoteUseCase(repository)
         )
     }
 }
