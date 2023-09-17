@@ -24,4 +24,7 @@ data class Note(
     companion object {
         val color = listOf(RedOrange, BabyBlue, RedPink, Violet, LightGreen)
     }
+
 }
+
+class InvalidNoteException(message: String) : Exception(message)
