@@ -11,5 +11,5 @@ import com.example.noteappcleanarchitecture.featurenote.domain.model.Note
 abstract class NoteDatabase : RoomDatabase() {
 
     abstract val noteDao : NoteDao
-    
+
 }
