@@ -1,4 +1,4 @@
-package com.example.noteappcleanarchitecture.featurenote.presentation.notes.component
+package com.example.noteappcleanarchitecture.featurenote.presentation.notes
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -8,6 +8,8 @@ import com.example.noteappcleanarchitecture.featurenote.domain.model.Note
 import com.example.noteappcleanarchitecture.featurenote.domain.use_cases.NoteUseCases
 import com.example.noteappcleanarchitecture.featurenote.domain.util.NoteOrder
 import com.example.noteappcleanarchitecture.featurenote.domain.util.OrderType
+import com.example.noteappcleanarchitecture.featurenote.presentation.notes.NoteStates
+import com.example.noteappcleanarchitecture.featurenote.presentation.notes.NotesEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.launchIn
