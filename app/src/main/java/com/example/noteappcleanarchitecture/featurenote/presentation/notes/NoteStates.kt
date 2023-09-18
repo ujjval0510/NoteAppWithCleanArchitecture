@@ -5,7 +5,7 @@ import com.example.noteappcleanarchitecture.featurenote.domain.util.NoteOrder
 import com.example.noteappcleanarchitecture.featurenote.domain.util.OrderType
 
 data class NoteStates(
-    val note: List<Note> = emptyList(),
+    val notes: List<Note> = emptyList(),
     val noteOrder: NoteOrder = NoteOrder.Date(OrderType.Descending),
     val isOrderSectionVisible: Boolean = false
 )
