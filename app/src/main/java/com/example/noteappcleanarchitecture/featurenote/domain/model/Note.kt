@@ -22,7 +22,7 @@ data class Note(
      * Companion objects can contain factory methods, which can be used to create new instances of the class without having to use the new keyword.
      */
     companion object {
-        val color = listOf(RedOrange, BabyBlue, RedPink, Violet, LightGreen)
+        val noteColors = listOf(RedOrange, BabyBlue, RedPink, Violet, LightGreen)
     }
 
 }

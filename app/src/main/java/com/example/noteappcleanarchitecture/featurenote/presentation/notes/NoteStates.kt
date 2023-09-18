@@ -1,4 +1,4 @@
-package com.example.noteappcleanarchitecture.featurenote.presentation.notes.component
+package com.example.noteappcleanarchitecture.featurenote.presentation.notes
 
 import com.example.noteappcleanarchitecture.featurenote.domain.model.Note
 import com.example.noteappcleanarchitecture.featurenote.domain.util.NoteOrder
