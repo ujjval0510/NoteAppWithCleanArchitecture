@@ -17,8 +17,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.noteappcleanarchitecture.featurenote.presentation.notes.component.NoteItem
-import com.example.noteappcleanarchitecture.featurenote.presentation.notes.component.NoteViewModel
-import com.example.noteappcleanarchitecture.featurenote.presentation.notes.component.NotesEvent
 import com.example.noteappcleanarchitecture.featurenote.presentation.notes.component.OrderSection
 import com.example.noteappcleanarchitecture.featurenote.presentation.util.Screen
 import kotlinx.coroutines.launch
